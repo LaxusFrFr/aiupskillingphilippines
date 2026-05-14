@@ -83,6 +83,38 @@ function initNavbarAnimations() {
     });
 }
 
+// Navbar scroll (same as benefits/team)
+function initNavbarScroll() {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+    
+    let ticking = false;
+    
+    const updateNavbar = () => {
+        ticking = false;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Add navbar-scrolled class when scrolled past 80px
+        if (scrollTop > 80) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+    };
+    
+    const onScroll = () => {
+        if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(updateNavbar);
+        }
+    };
+    
+    window.addEventListener('scroll', onScroll, { passive: true });
+    
+    // Initial call
+    updateNavbar();
+}
+
 // Button and interaction animations
 function initInteractionAnimations() {
     // Button hover effects
@@ -102,46 +134,6 @@ function initInteractionAnimations() {
                 ease: "power2.out"
             });
         });
-    });
-
-    // Navbar hover animations with smooth green bar
-    document.querySelectorAll('.nav-item').forEach(item => {
-        const link = item.querySelector('.nav-link');
-        const navBar = item.querySelector('.nav-bar');
-        if (!navBar) return;
-
-        // Initial state: hidden, scaled to 0
-        gsap.set(navBar, { scaleX: 0, opacity: 0 });
-
-        item.addEventListener('mouseenter', function() {
-            // Kill any ongoing tweens to prevent conflicts during rapid mouse movement
-            gsap.killTweensOf(navBar);
-            gsap.to(navBar, {
-                scaleX: 1,
-                opacity: 1,
-                duration: 0.6,
-                ease: "power3.out"
-            });
-        });
-
-        item.addEventListener('mouseleave', function() {
-            // Kill any ongoing tweens
-            gsap.killTweensOf(navBar);
-            gsap.to(navBar, {
-                scaleX: 0,
-                opacity: 0,
-                duration: 0.4,
-                ease: "power2.in"
-            });
-        });
-    });
-
-    // Animate navbar
-    gsap.from(".navbar", {
-        y: -100,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out"
     });
 }
 
@@ -751,7 +743,7 @@ function initSafeScrollReveal() {
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initFallbacks();
-    initNavbarAnimations();
+    initNavbarScroll();
     initSafeScrollReveal();
     initNavbarBrandHandler();
     initCtaFallingShapes();

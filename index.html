@@ -48,7 +48,7 @@
             </div>
             <div class="tip-message">
                 <div class="tip-title">Pro Tip</div>
-                <div class="tip-text">Enable Windows animation effects in Settings. This ensures the best visual experience.</div>
+                <div class="tip-text">For the best visual experience, ensure your device animations are enabled. This website is optimized for all devices.</div>
                 <div class="tip-attribution">System Notification</div>
             </div>
             <button class="tip-close" id="tipClose">
@@ -174,7 +174,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html"><span class="nav-text"></span>Home</span><span class="nav-bar"></span></a>
+                        <a class="nav-link active" href="index.html"><span class="nav-text">Home</span><span class="nav-bar"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="process.html"><span class="nav-text">Process</span><span class="nav-bar"></span></a>
@@ -624,7 +624,7 @@
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-6 scroll-reveal-safe stagger-2">
-                    <div style="padding-left: 30px;">
+                    <div>
                         <h5 class="site-footer-title scroll-reveal-safe stagger-1">Quick Links</h5>
                         <ul class="site-footer-links">
                             <li class="scroll-reveal-safe stagger-1"><a href="index.html">Home</a></li>
@@ -663,13 +663,8 @@
     <!-- Cat Mascot -->
     <div class="cat-mascot-wrapper">
         <div class="cat-mascot bubble-hidden" id="catMascot">
-            <div class="cat-notify-badge" id="catNotifyBadge">
-                <span class="cat-notify-dot"></span>
-                <span class="cat-notify-text">CLICK ME!</span>
-            </div>
             <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="AI Cat Mascot" class="cat-icon" id="catMascotIcon">
             <div class="cat-speech-bubble is-hidden" id="catSpeechBubble">
-                <button type="button" class="cat-bubble-close" id="catBubbleClose" aria-label="Close message">&times;</button>
                 <div class="cat-speech-bubble-content">
                     <p class="cat-message">Hi! I'm <strong>Jho</strong> 👋 I'm here to guide you through your AI upskilling journey. Ready to transform your career?</p>
                 </div>
@@ -680,22 +675,19 @@
     <script>
         (function () {
             const bubble = document.getElementById('catSpeechBubble');
-            const closeBtn = document.getElementById('catBubbleClose');
             const catIcon = document.getElementById('catMascotIcon');
             const mascot = document.getElementById('catMascot');
-            if (!bubble || !closeBtn || !catIcon || !mascot) return;
-            const hide = () => {
-                bubble.classList.add('is-hidden');
-                mascot.classList.add('bubble-hidden');
+            if (!bubble || !catIcon || !mascot) return;
+            const toggle = () => {
+                if (bubble.classList.contains('is-hidden')) {
+                    bubble.classList.remove('is-hidden');
+                    mascot.classList.remove('bubble-hidden');
+                } else {
+                    bubble.classList.add('is-hidden');
+                    mascot.classList.add('bubble-hidden');
+                }
             };
-            const show = () => {
-                bubble.classList.remove('is-hidden');
-                mascot.classList.remove('bubble-hidden');
-            };
-            closeBtn.addEventListener('click', (e) => { e.stopPropagation(); hide(); });
-            catIcon.addEventListener('click', () => {
-                if (bubble.classList.contains('is-hidden')) show();
-            });
+            catIcon.addEventListener('click', toggle);
         })();
     </script>
 

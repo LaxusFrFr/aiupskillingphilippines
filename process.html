@@ -716,7 +716,7 @@
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div style="padding-left: 30px;">
+                    <div>
                         <h5 class="site-footer-title">Quick Links</h5>
                         <ul class="site-footer-links">
                             <li><a href="index.html">Home</a></li>
@@ -832,7 +832,6 @@
         <div class="cat-mascot" id="catMascot">
             <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="AI Cat Mascot" class="cat-icon" id="catMascotIcon">
             <div class="cat-speech-bubble" id="catSpeechBubble">
-                <button type="button" class="cat-bubble-close" id="catBubbleClose" aria-label="Close message">&times;</button>
                 <div class="cat-speech-bubble-content">
                     <p class="cat-message">Your journey to <strong>AI mastery</strong> starts here. Let's make it happen!</p>
                 </div>
@@ -843,22 +842,19 @@
     <script>
         (function () {
             const bubble = document.getElementById('catSpeechBubble');
-            const closeBtn = document.getElementById('catBubbleClose');
             const catIcon = document.getElementById('catMascotIcon');
             const mascot = document.getElementById('catMascot');
-            if (!bubble || !closeBtn || !catIcon || !mascot) return;
-            const hide = () => {
-                bubble.classList.add('is-hidden');
-                mascot.classList.add('bubble-hidden');
+            if (!bubble || !catIcon || !mascot) return;
+            const toggle = () => {
+                if (bubble.classList.contains('is-hidden')) {
+                    bubble.classList.remove('is-hidden');
+                    mascot.classList.remove('bubble-hidden');
+                } else {
+                    bubble.classList.add('is-hidden');
+                    mascot.classList.add('bubble-hidden');
+                }
             };
-            const show = () => {
-                bubble.classList.remove('is-hidden');
-                mascot.classList.remove('bubble-hidden');
-            };
-            closeBtn.addEventListener('click', (e) => { e.stopPropagation(); hide(); });
-            catIcon.addEventListener('click', () => {
-                if (bubble.classList.contains('is-hidden')) show();
-            });
+            catIcon.addEventListener('click', toggle);
         })();
     </script>
 
