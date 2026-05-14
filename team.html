@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - AI Upskilling Philippines</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css?v=15" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+    
+    <!-- GSAP and Lenis - Bine approach: only GSAP core, no ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="lenis.min.js"></script>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize scroll reveal animations
+            if (typeof initSafeScrollReveal === 'function') {
+                setTimeout(() => initSafeScrollReveal(), 100);
+            }
+
+            const catMascotWrapper = document.querySelector('.cat-mascot-wrapper');
+
+            // Show cat mascot after 3 seconds
+            setTimeout(() => {
+                if (catMascotWrapper) {
+                    catMascotWrapper.classList.add('visible');
+                }
+            }, 3000);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="AI Upskilling PH" style="width: 30px; height: 30px; margin-right: 8px;"> AI Upskilling PH
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><span class="nav-text">Home</span><span class="nav-bar"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="process.html"><span class="nav-text">Process</span><span class="nav-bar"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="benefits.html"><span class="nav-text">Benefits</span><span class="nav-bar"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="team.html"><span class="nav-text">Our Team</span><span class="nav-bar"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-team hero-section--parallax">
+        <div class="hero-bg"></div>
+        <div class="hero-light-orb hero-light-orb-1"></div>
+        <div class="hero-light-orb hero-light-orb-2"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero-content text-center">
+                        <h1 class="display-4 fw-bold text-white mb-4 scroll-reveal-safe stagger-1">The Research Team</h1>
+                        <p class="lead text-white mb-4 scroll-reveal-safe stagger-2">
+                            The proponents behind <em>AI-Driven Job Displacement &amp; Skills Mismatch</em> — a project submitted in partial fulfillment of <strong>SMT 403 – Fundamentals of Business Process Outsourcing 2</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper with Fixed Background -->
+    <div class="team-main-content-wrapper">
+        <div class="grid-pattern-overlay"></div>
+
+    <!-- Project Adviser -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="team-section-title scroll-reveal-safe stagger-1">Project Adviser</h2>
+                <p class="team-section-subtitle scroll-reveal-safe stagger-2">Faculty mentor guiding the research and proposal development</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-1">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1" style="background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Ms. Jenny Mae A. Gabuya</h4>
+                        <p class="project-adviser-title fw-bold scroll-reveal-safe stagger-3">Project Adviser</p>
+                        <p class="mb-3 scroll-reveal-safe stagger-4">
+                            Faculty-in-charge of SMT 403 – Fundamentals of Business Process Outsourcing 2.
+                            Provided academic guidance, feedback, and quality assurance throughout the proposal's development.
+                        </p>
+                        <div class="team-expertise">
+                            <div class="badge scroll-reveal-safe stagger-5"><i class="fas fa-graduation-cap"></i><span>BPO Education</span></div>
+                            <div class="badge scroll-reveal-safe stagger-6"><i class="fas fa-search"></i><span>Research Supervision</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Team -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="team-section-title scroll-reveal-safe stagger-1">Research Team</h2>
+                <p class="team-section-subtitle scroll-reveal-safe stagger-2">The eleven proponents who co-authored this proposal</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-1">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Arellano, John Kerzy U.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-2">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Bulaklak, Jack Richard B.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-3">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1" style="background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">De Chavez, Christel L.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-4">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Dipasupil, Earl Daniel D.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-5">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Formanes, Rencee P.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-6">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Jimenez, Jordan Russel E.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-7">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Malpica, Dominic I.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-8">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Mercado, Jhanus</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-1">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Molino, Jayvee L.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 offset-lg-2">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-2">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Morales, Kent Gabriel</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center h-100 scroll-reveal-safe stagger-3">
+                        <div class="team-card-avatar-circle scroll-reveal-scale stagger-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="scroll-reveal-safe stagger-2">Ramilo, Frances Adrian G.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Context -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="academic-context-card scroll-reveal-safe stagger-1">
+                        <div class="academic-context-header">
+                            <div class="academic-context-icon scroll-reveal-scale stagger-1">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="academic-context-title">
+                                <h2 class="academic-context-heading scroll-reveal-safe stagger-2">Academic Context</h2>
+                                <p class="academic-context-subtitle scroll-reveal-safe stagger-3">Course fulfillment details</p>
+                            </div>
+                        </div>
+                        <div class="academic-context-body">
+                            <div class="academic-context-course scroll-reveal-safe stagger-4">
+                                <div class="academic-context-label">
+                                    <i class="fas fa-book-open"></i>
+                                    <span>Course</span>
+                                </div>
+                                <div class="academic-context-value">
+                                    <strong>SMT 403 – Fundamentals of Business Process Outsourcing 2</strong>
+                                </div>
+                            </div>
+                            <div class="academic-context-divider"></div>
+                            <div class="academic-context-info-grid">
+                                <div class="academic-context-info-item scroll-reveal-safe stagger-5">
+                                    <div class="academic-context-info-label">
+                                        <i class="fas fa-user-tie"></i>
+                                        <span>Submitted to</span>
+                                    </div>
+                                    <div class="academic-context-info-value">Ms. Jenny Mae A. Gabuya</div>
+                                </div>
+                                <div class="academic-context-info-item scroll-reveal-safe stagger-6">
+                                    <div class="academic-context-info-label">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>Date submitted</span>
+                                    </div>
+                                    <div class="academic-context-info-value">May 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="academic-context-footer">
+                            <div class="academic-context-badge scroll-reveal-scale stagger-7">
+                                <i class="fas fa-certificate"></i>
+                                <span>Partial Fulfillment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cited Stakeholders -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="team-section-title scroll-reveal-safe stagger-1">Cited Stakeholders & Referenced Bodies</h2>
+                <p class="team-section-subtitle scroll-reveal-safe stagger-2">
+                    Organizations referenced in this proposal as intended implementation partners.
+                    No endorsement or affiliation is implied at this stage.
+                </p>
+            </div>
+
+            <div class="stakeholders-grid">
+                <div class="stakeholder-card scroll-reveal-safe stagger-1" style="--stakeholder-color: #667eea;">
+                    <div class="stakeholder-card-header">
+                        <div class="stakeholder-icon scroll-reveal-scale stagger-1">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stakeholder-acronym scroll-reveal-safe stagger-2">IBPAP</div>
+                    </div>
+                    <div class="stakeholder-card-body">
+                        <h4 class="stakeholder-name scroll-reveal-safe stagger-3">IT &amp; Business Process Association of the Philippines</h4>
+                        <p class="stakeholder-description scroll-reveal-safe stagger-4">
+                            Source of industry skill-gap data (10% qualified applicants) and the projected 800,000 jobs at risk by 2028 cited in this proposal.
+                        </p>
+                    </div>
+                    <div class="stakeholder-card-footer">
+                        <span class="stakeholder-tag scroll-reveal-safe stagger-5">Industry Association</span>
+                    </div>
+                </div>
+
+                <div class="stakeholder-card scroll-reveal-safe stagger-2" style="--stakeholder-color: #10b981;">
+                    <div class="stakeholder-card-header">
+                        <div class="stakeholder-icon scroll-reveal-scale stagger-1">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stakeholder-acronym scroll-reveal-safe stagger-2">TESDA</div>
+                    </div>
+                    <div class="stakeholder-card-body">
+                        <h4 class="stakeholder-name scroll-reveal-safe stagger-3">Technical Education and Skills Development Authority</h4>
+                        <p class="stakeholder-description scroll-reveal-safe stagger-4">
+                            Identified as the credentialing partner for the micro-credentials and competency assessments proposed.
+                        </p>
+                    </div>
+                    <div class="stakeholder-card-footer">
+                        <span class="stakeholder-tag scroll-reveal-safe stagger-5">Government Agency</span>
+                    </div>
+                </div>
+
+                <div class="stakeholder-card scroll-reveal-safe stagger-3" style="--stakeholder-color: #06b6d4;">
+                    <div class="stakeholder-card-header">
+                        <div class="stakeholder-icon scroll-reveal-scale stagger-1">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="stakeholder-acronym scroll-reveal-safe stagger-2">DICT</div>
+                    </div>
+                    <div class="stakeholder-card-body">
+                        <h4 class="stakeholder-name scroll-reveal-safe stagger-3">Department of Information and Communications Technology</h4>
+                        <p class="stakeholder-description scroll-reveal-safe stagger-4">
+                            Referenced for digital infrastructure support and the Digital Transformation Roadmap framework.
+                        </p>
+                    </div>
+                    <div class="stakeholder-card-footer">
+                        <span class="stakeholder-tag scroll-reveal-safe stagger-5">Government Agency</span>
+                    </div>
+                </div>
+
+                <div class="stakeholder-card scroll-reveal-safe stagger-4" style="--stakeholder-color: #f59e0b;">
+                    <div class="stakeholder-card-header">
+                        <div class="stakeholder-icon scroll-reveal-scale stagger-1">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stakeholder-acronym scroll-reveal-safe stagger-2">DOLE</div>
+                    </div>
+                    <div class="stakeholder-card-body">
+                        <h4 class="stakeholder-name scroll-reveal-safe stagger-3">Department of Labor and Employment</h4>
+                        <p class="stakeholder-description scroll-reveal-safe stagger-4">
+                            Cited for labor-market policy alignment and workforce protection in the AI transition.
+                        </p>
+                    </div>
+                    <div class="stakeholder-card-footer">
+                        <span class="stakeholder-tag scroll-reveal-safe stagger-5">Government Agency</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-sources-card scroll-reveal-safe stagger-5">
+                <div class="data-sources-header">
+                    <div class="data-sources-icon scroll-reveal-scale stagger-1">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="data-sources-title">
+                        <h3 class="scroll-reveal-safe stagger-2">Data &amp; Research Sources</h3>
+                        <p class="scroll-reveal-safe stagger-3">International organizations and industry statements referenced in this proposal</p>
+                    </div>
+                </div>
+                <div class="data-sources-body">
+                    <div class="data-source-item scroll-reveal-safe stagger-4">
+                        <div class="data-source-label">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>International Labour Organization (ILO, 2025)</span>
+                        </div>
+                        <div class="data-source-value">89% automation exposure statistic</div>
+                    </div>
+                    <div class="data-source-item scroll-reveal-safe stagger-5">
+                        <div class="data-source-label">
+                            <i class="fas fa-file-alt"></i>
+                            <span>International Monetary Fund (IMF, 2025)</span>
+                        </div>
+                        <div class="data-source-value">Working paper on AI exposure of Philippine employment</div>
+                    </div>
+                    <div class="data-source-item scroll-reveal-safe stagger-6">
+                        <div class="data-source-label">
+                            <i class="fas fa-quote-left"></i>
+                            <span>IBPAP President Jack Madrid</span>
+                        </div>
+                        <div class="data-source-value">Statement on the projected 800,000 job opportunities by 2028</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4 site-footer-grid">
+                <div class="col-lg-5 col-md-12">
+                    <h5 class="site-footer-title">AI Upskilling Philippines</h5>
+                    <p class="site-footer-desc">
+                        Equipping Filipino BPO workers with industry-aligned AI, data, and digital skills — in partnership with IBPAP and leading enterprises.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div style="padding-left: 30px;">
+                        <h5 class="site-footer-title">Quick Links</h5>
+                        <ul class="site-footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="process.html">Process</a></li>
+                            <li><a href="benefits.html">Benefits</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="site-footer-title">Contact</h5>
+                    <ul class="site-footer-links site-footer-contact">
+                        <li><i class="fas fa-envelope"></i> info@aiupskilling.ph</li>
+                        <li><i class="fas fa-phone"></i> +63 2 1234 5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="site-footer-bottom">
+                <div class="site-footer-social" style="justify-content: center;">
+                    <a href="https://www.facebook.com/laxus.frfr" class="site-footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/laxus.frfr" class="site-footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@laxus.frfr" class="site-footer-social-link" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="mb-0">&copy; 2026 AI Upskilling Philippines. All rights reserved.</p>
+                <p class="mb-0 site-footer-credit">Powered by Windsurf & Framer | Developed by <span>Laxus</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cat Mascot -->
+    <div class="cat-mascot-wrapper">
+        <div class="cat-mascot" id="catMascot">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="AI Cat Mascot" class="cat-icon" id="catMascotIcon">
+            <div class="cat-speech-bubble" id="catSpeechBubble">
+                <button type="button" class="cat-bubble-close" id="catBubbleClose" aria-label="Close message">&times;</button>
+                <div class="cat-speech-bubble-content">
+                    <p class="cat-message">Meet our <strong>amazing team</strong>! The experts behind your AI transformation.</p>
+                </div>
+                <div class="cat-speech-bubble-tail"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            const bubble = document.getElementById('catSpeechBubble');
+            const closeBtn = document.getElementById('catBubbleClose');
+            const catIcon = document.getElementById('catMascotIcon');
+            const mascot = document.getElementById('catMascot');
+            if (!bubble || !closeBtn || !catIcon || !mascot) return;
+            const hide = () => {
+                bubble.classList.add('is-hidden');
+                mascot.classList.add('bubble-hidden');
+            };
+            const show = () => {
+                bubble.classList.remove('is-hidden');
+                mascot.classList.remove('bubble-hidden');
+            };
+            closeBtn.addEventListener('click', (e) => { e.stopPropagation(); hide(); });
+            catIcon.addEventListener('click', () => {
+                if (bubble.classList.contains('is-hidden')) show();
+            });
+        })();
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script-team.js" defer></script>
+</body>
+</html>

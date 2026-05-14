@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits & Impact - AI Upskilling Philippines</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css?v=14" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+    
+    <!-- GSAP and Lenis - Laxus approach: only GSAP core, no ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="lenis.min.js"></script>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const catMascotWrapper = document.querySelector('.cat-mascot-wrapper');
+
+            // Show cat mascot after 3 seconds
+            setTimeout(() => {
+                if (catMascotWrapper) {
+                    catMascotWrapper.classList.add('visible');
+                }
+            }, 3000);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="AI Upskilling PH" style="width: 30px; height: 30px; margin-right: 8px;"> AI Upskilling PH
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><span class="nav-text">Home</span><span class="nav-bar"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="process.html"><span class="nav-text">Process</span><span class="nav-bar"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="benefits.html"><span class="nav-text">Benefits</span><span class="nav-bar"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html"><span class="nav-text">Our Team</span><span class="nav-bar"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-benefits hero-section--parallax">
+        <div class="hero-bg"></div>
+        <div class="hero-light-orb hero-light-orb-1"></div>
+        <div class="hero-light-orb hero-light-orb-2"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero-content text-center">
+                        <h1 class="display-4 fw-bold text-white mb-4 scroll-reveal-safe stagger-1">Benefits & Impact</h1>
+                        <p class="lead text-white mb-4 scroll-reveal-safe stagger-2">
+                            Transform your career and contribute to the Philippines' digital economy
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper with Fixed Background -->
+    <div class="benefits-main-content-wrapper">
+        <div class="grid-pattern-overlay"></div>
+
+    <!-- Expected Results -->
+    <section class="expected-results-section">
+        <div class="expected-results-bg-orb expected-results-bg-orb-1"></div>
+        <div class="expected-results-bg-orb expected-results-bg-orb-2"></div>
+        <div class="expected-results-grid"></div>
+
+        <div class="container">
+            <div class="expected-results-header">
+                <span class="expected-results-eyebrow scroll-reveal-safe stagger-1">Project KPIs</span>
+                <h2 class="expected-results-title scroll-reveal-safe stagger-2">Expected Results</h2>
+                <p class="expected-results-subtitle scroll-reveal-safe stagger-3">Targeted, measurable outcomes the project commits to delivering once implemented</p>
+            </div>
+
+            <div class="expected-results-grid-container">
+                <div class="result-card scroll-reveal-safe stagger-1" style="--result-color: #667eea;">
+                    <div class="result-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="result-content">
+                        <h4 class="result-title">Result 1: Enhanced Skills</h4>
+                        <p class="result-desc">Technical proficiency in AI and digital technologies</p>
+                    </div>
+                    <div class="result-metrics">
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Training Completion</span>
+                                <span class="metric-value">500+ individuals</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 85%; --target-width: 85%; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
+                                <span class="metric-tag">Year-1 Target</span>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Competency Test Success</span>
+                                <span class="metric-value">80% pass rate</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 80%; --target-width: 80%; background: linear-gradient(90deg, #10b981, #059669);"></div>
+                                <span class="metric-tag">Target: 80%</span>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Confidence Improvement</span>
+                                <span class="metric-value">70% of participants</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 70%; --target-width: 70%; background: linear-gradient(90deg, #06b6d4, #0891b2);"></div>
+                                <span class="metric-tag">Target: 70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card scroll-reveal-safe" style="--result-color: #10b981;">
+                    <div class="result-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="result-content">
+                        <h4 class="result-title">Result 2: Industry Alignment</h4>
+                        <p class="result-desc">Reduced skills gap between job seekers and employers</p>
+                    </div>
+                    <div class="result-metrics">
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Industry Partnerships</span>
+                                <span class="metric-value">10+ companies</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 90%; --target-width: 90%; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
+                                <span class="metric-tag">Year-1 Target</span>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Job Placement Rate</span>
+                                <span class="metric-value">60% within 6 months</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 60%; --target-width: 60%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
+                                <span class="metric-tag">Target: 60%</span>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Labor Market Assessments</span>
+                                <span class="metric-value">Quarterly reviews</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 100%; --target-width: 100%; background: linear-gradient(90deg, #10b981, #059669);"></div>
+                                <span class="metric-tag">Planned: every quarter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card scroll-reveal-safe" style="--result-color: #f59e0b;">
+                    <div class="result-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="result-content">
+                        <h4 class="result-title">Result 3: Awareness & Advocacy</h4>
+                        <p class="result-desc">Increased understanding of AI-driven changes</p>
+                    </div>
+                    <div class="result-metrics">
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Awareness Campaigns</span>
+                                <span class="metric-value">8+ seminars annually</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 75%; --target-width: 75%; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
+                                <span class="metric-tag">Year-1 Target</span>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">People Reached</span>
+                                <span class="metric-value">2,000+ annually</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 85%; --target-width: 85%; background: linear-gradient(90deg, #06b6d4, #0891b2);"></div>
+                                <span class="metric-tag">Target: 2,000+</span>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Positive Feedback</span>
+                                <span class="metric-value">75% satisfaction</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 75%; --target-width: 75%; background: linear-gradient(90deg, #10b981, #059669);"></div>
+                                <span class="metric-tag">Target: 75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card scroll-reveal-safe" style="--result-color: #06b6d4;">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="result-content">
+                        <h4 class="result-title">Result 4: Workforce Flexibility</h4>
+                        <p class="result-desc">Long-term career prospects and adaptability</p>
+                    </div>
+                    <div class="result-metrics">
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Employability Skills</span>
+                                <span class="metric-value">65% improvement</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 65%; --target-width: 65%; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
+                                <span class="metric-tag">Target: 65%</span>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Training Modules</span>
+                                <span class="metric-value">5+ developed</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 100%; --target-width: 100%; background: linear-gradient(90deg, #10b981, #059669);"></div>
+                                <span class="metric-tag">Target: 5+ modules</span>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-header">
+                                <span class="metric-label">Employment Tracking</span>
+                                <span class="metric-value">Bi-annual monitoring</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-bar" style="width: 100%; --target-width: 100%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
+                                <span class="metric-tag">Planned: every 6 months</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Categories -->
+    <section class="multi-level-impact-section">
+        <div class="multi-level-impact-bg-orb multi-level-impact-bg-orb-1"></div>
+        <div class="multi-level-impact-bg-orb multi-level-impact-bg-orb-2"></div>
+        <div class="multi-level-impact-grid"></div>
+
+        <div class="container">
+            <div class="multi-level-impact-header">
+                <h2 class="multi-level-impact-title scroll-reveal-safe stagger-1">Multi-Level Impact</h2>
+                <p class="multi-level-impact-subtitle scroll-reveal-safe stagger-2">Creating positive change across individuals, industries, and the nation</p>
+            </div>
+
+            <div class="multi-level-impact-grid-container">
+                <div class="impact-card scroll-reveal-safe stagger-1" style="--impact-color: #667eea;">
+                    <div class="impact-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4 class="impact-title">Individual Impact</h4>
+                        <p class="impact-desc">Personal transformation and career advancement</p>
+                    </div>
+                    <ul class="impact-list">
+                        <li><i class="fas fa-check"></i> Reduced unemployment risk</li>
+                        <li><i class="fas fa-check"></i> Access to higher-paying AI roles</li>
+                        <li><i class="fas fa-check"></i> Enhanced job security</li>
+                        <li><i class="fas fa-check"></i> Career growth opportunities</li>
+                    </ul>
+                </div>
+
+                <div class="impact-card scroll-reveal-safe stagger-2" style="--impact-color: #10b981;">
+                    <div class="impact-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4 class="impact-title">Industry Impact</h4>
+                        <p class="impact-desc">Strengthening the BPO sector's competitiveness</p>
+                    </div>
+                    <ul class="impact-list">
+                        <li><i class="fas fa-check"></i> Addresses 90% skill shortage</li>
+                        <li><i class="fas fa-check"></i> Enables 800K job creation</li>
+                        <li><i class="fas fa-check"></i> Improves global competitiveness</li>
+                        <li><i class="fas fa-check"></i> Attracts foreign investment</li>
+                    </ul>
+                </div>
+
+                <div class="impact-card scroll-reveal-safe stagger-3" style="--impact-color: #f59e0b;">
+                    <div class="impact-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4 class="impact-title">Economic Impact</h4>
+                        <p class="impact-desc">Protecting and growing our national economy</p>
+                    </div>
+                    <ul class="impact-list">
+                        <li><i class="fas fa-check"></i> Safeguards 8.5% GDP contribution</li>
+                        <li><i class="fas fa-check"></i> Maintains remittance-level impact</li>
+                        <li><i class="fas fa-check"></i> Increases tax revenue</li>
+                        <li><i class="fas fa-check"></i> Boosts digital economy</li>
+                    </ul>
+                </div>
+
+                <div class="impact-card scroll-reveal-safe stagger-4" style="--impact-color: #06b6d4;">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4 class="impact-title">Social Impact</h4>
+                        <p class="impact-desc">Building a more equitable society</p>
+                    </div>
+                    <ul class="impact-list">
+                        <li><i class="fas fa-check"></i> Prevents structural unemployment</li>
+                        <li><i class="fas fa-check"></i> Maintains middle-class stability</li>
+                        <li><i class="fas fa-check"></i> Reduces income inequality</li>
+                        <li><i class="fas fa-check"></i> Promotes inclusive growth</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projected Career Pathways -->
+    <section class="career-pathways-section">
+        <div class="career-pathways-bg-orb career-pathways-bg-orb-1"></div>
+        <div class="career-pathways-bg-orb career-pathways-bg-orb-2"></div>
+        <div class="career-pathways-grid"></div>
+
+        <div class="container">
+            <div class="career-pathways-header">
+                <span class="career-pathways-eyebrow scroll-reveal-safe stagger-1">Illustrative Scenarios</span>
+                <h2 class="career-pathways-title scroll-reveal-safe stagger-2">Projected Career Pathways</h2>
+                <p class="career-pathways-subtitle scroll-reveal-safe stagger-3">
+                    Sample transition journeys the program is designed to enable.
+                    These are <em>illustrative scenarios</em> — not testimonials — since the project is still in proposal stage.
+                </p>
+            </div>
+
+            <div class="career-pathways-timeline" id="careerPathwaysTimeline">
+                <div class="pathway-item-timeline scroll-reveal-safe stagger-1" style="--pathway-color: #667eea;">
+                    <div class="pathway-step">
+                        <span class="pathway-step-number">A</span>
+                        <div class="pathway-step-icon">
+                            <i class="fas fa-arrow-right-from-bracket"></i>
+                        </div>
+                    </div>
+                    <div class="pathway-content">
+                        <div class="pathway-transition">
+                            <span class="pathway-from">Call Center Agent</span>
+                            <i class="fas fa-arrow-right pathway-arrow"></i>
+                            <span class="pathway-to">AI Specialist</span>
+                        </div>
+                        <p class="pathway-description">A typical call-center agent enrolls in the AI tools and prompt-engineering track, completes hands-on projects, and qualifies for an AI-enabled customer-experience role — moving up from an automation-exposed seat into a higher-value position.</p>
+                        <div class="pathway-tags">
+                            <span class="pathway-tag pathway-tag-success">Targeted salary uplift</span>
+                            <span class="pathway-tag pathway-tag-primary">~3 months training</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pathway-item-timeline scroll-reveal-safe stagger-2" style="--pathway-color: #f59e0b;">
+                    <div class="pathway-step">
+                        <span class="pathway-step-number">B</span>
+                        <div class="pathway-step-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="pathway-content">
+                        <div class="pathway-transition">
+                            <span class="pathway-from">Data Entry</span>
+                            <i class="fas fa-arrow-right pathway-arrow"></i>
+                            <span class="pathway-to">RPA Developer</span>
+                        </div>
+                        <p class="pathway-description">A data-entry worker completes the RPA software and process-improvement modules, then builds automations that the BPO previously outsourced — transitioning into a junior RPA developer role with internal mobility opportunities.</p>
+                        <div class="pathway-tags">
+                            <span class="pathway-tag pathway-tag-success">New role mapped</span>
+                            <span class="pathway-tag pathway-tag-primary">RPA portfolio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pathway-item-timeline scroll-reveal-safe stagger-3" style="--pathway-color: #10b981;">
+                    <div class="pathway-step">
+                        <span class="pathway-step-number">C</span>
+                        <div class="pathway-step-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                    </div>
+                    <div class="pathway-content">
+                        <div class="pathway-transition">
+                            <span class="pathway-from">Customer Service</span>
+                            <i class="fas fa-arrow-right pathway-arrow"></i>
+                            <span class="pathway-to">Data Analyst</span>
+                        </div>
+                        <p class="pathway-description">A customer-service representative completes the advanced data analytics and business-intelligence track and moves into a CX-insights analyst role — turning historical customer interactions into business decisions instead of being replaced by chatbots.</p>
+                        <div class="pathway-tags">
+                            <span class="pathway-tag pathway-tag-success">Career step-up</span>
+                            <span class="pathway-tag pathway-tag-primary">Analytics certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monitoring & Evaluation -->
+    <section class="me-framework-section">
+        <div class="me-framework-bg-gradient"></div>
+        <div class="me-framework-grid-pattern"></div>
+
+        <div class="container">
+            <div class="me-framework-header">
+                <span class="me-framework-eyebrow scroll-reveal-safe stagger-1">
+                    <span class="me-framework-eyebrow-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </span>
+                    Section V — M&amp;E
+                </span>
+                <h2 class="me-framework-title scroll-reveal-safe stagger-2">Monitoring &amp; Evaluation Framework</h2>
+                <p class="me-framework-subtitle scroll-reveal-safe stagger-3">
+                    How the project will stay accountable to its KPIs once implementation begins
+                </p>
+            </div>
+
+            <div class="me-framework-masonry">
+                <div class="me-card me-card-medium scroll-reveal-safe stagger-1" style="--me-color:#667eea;">
+                    <div class="me-card-header">
+                        <div class="me-card-number">01</div>
+                        <h4>Monthly Progress Reports</h4>
+                    </div>
+                    <div class="me-card-alignment">
+                        <i class="fas fa-link"></i>
+                        <span>Aligned with Ongoing Monitoring</span>
+                    </div>
+                    <ul class="me-card-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Monthly Updates.</strong> Project leads submit monthly updates on enrollment numbers, partnership status, and technical hurdles in the learning platforms.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="me-card me-card-medium scroll-reveal-safe stagger-2" style="--me-color:#10b981;">
+                    <div class="me-card-header">
+                        <div class="me-card-number">02</div>
+                        <h4>Quarterly Impact Assessments</h4>
+                    </div>
+                    <div class="me-card-alignment">
+                        <i class="fas fa-link"></i>
+                        <span>Aligned with Quarterly KPIs</span>
+                    </div>
+                    <ul class="me-card-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Formal Evaluation.</strong> Every three months, a formal evaluation compares actual outputs against the KPIs — partnerships signed, learners enrolled, modules launched.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="me-card me-card-medium scroll-reveal-safe stagger-3" style="--me-color:#f59e0b;">
+                    <div class="me-card-header">
+                        <div class="me-card-number">03</div>
+                        <h4>Participant Feedback Loops</h4>
+                    </div>
+                    <div class="me-card-alignment">
+                        <i class="fas fa-link"></i>
+                        <span>Aligned with Result 3 — Satisfaction</span>
+                    </div>
+                    <ul class="me-card-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Module Surveys.</strong> Surveys after each training module measure satisfaction and confidence (the KPI behind Result 3) and feed directly into curriculum updates.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="me-card me-card-medium scroll-reveal-safe stagger-4" style="--me-color:#06b6d4;">
+                    <div class="me-card-header">
+                        <div class="me-card-number">04</div>
+                        <h4>Annual Stakeholder Review</h4>
+                    </div>
+                    <div class="me-card-alignment">
+                        <i class="fas fa-link"></i>
+                        <span>Aligned with Strategic Review</span>
+                    </div>
+                    <ul class="me-card-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Year-End Report.</strong> A year-end report is delivered to faculty and industry partners (IBPAP, TESDA) to assess sustainability and nationwide scale-up potential.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Outlook -->
+    <section class="project-outlook-section py-5 mb-0 pb-5">
+        <div class="project-outlook-bg-orb project-outlook-bg-orb-1"></div>
+        <div class="project-outlook-bg-orb project-outlook-bg-orb-2"></div>
+        <div class="project-outlook-grid"></div>
+
+        <div class="container">
+            <div class="project-outlook-header">
+                <span class="project-outlook-eyebrow scroll-reveal-safe stagger-1">
+                    <span class="project-outlook-eyebrow-icon">
+                        <i class="fas fa-compass"></i>
+                    </span>
+                    Project Outlook
+                </span>
+                <h2 class="project-outlook-title scroll-reveal-safe stagger-2">Not Resisting AI — Keeping Filipinos Competitive With It</h2>
+                <p class="project-outlook-subtitle scroll-reveal-safe stagger-3">
+                    This is not a project intended to resist automation, but to make sure Filipino BPO workers do not fall behind as a consequence.
+                </p>
+            </div>
+
+            <div class="project-outlook-content">
+                <div class="project-outlook-main">
+                    <div class="project-outlook-text">
+                        <p class="project-outlook-lead">
+                            By creating a workforce that can <em>compete with, rather than succumb to,</em> automation and AI, the project aims to ensure the Philippines maintains its position as a major global hub for the services industry — while adhering to its philosophy of inclusive and sustainable economic development.
+                        </p>
+                        <p class="project-outlook-intro">
+                            The proposal's headline goals are deliberately scoped to what is achievable and measurable within the project's defined Results:
+                        </p>
+                    </div>
+
+                    <div class="project-outlook-goals">
+                        <div class="outlook-goal scroll-reveal-safe stagger-1" style="--goal-color: #667eea;">
+                            <div class="outlook-goal-number">01</div>
+                            <div class="outlook-goal-content">
+                                <h4 class="outlook-goal-title">Job Opportunities</h4>
+                                <p class="outlook-goal-text">
+                                    Help fill the <strong>800,000 projected job opportunities by 2028</strong> that would otherwise go unfulfilled
+                                    <span class="outlook-goal-source">(IBPAP / Jack Madrid)</span>
+                                </p>
+                            </div>
+                            <div class="outlook-goal-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                        </div>
+
+                        <div class="outlook-goal scroll-reveal-safe stagger-2" style="--goal-color: #10b981;">
+                            <div class="outlook-goal-number">02</div>
+                            <div class="outlook-goal-content">
+                                <h4 class="outlook-goal-title">GDP Protection</h4>
+                                <p class="outlook-goal-text">
+                                    Safeguard the BPO sector's contribution of <strong>~8.5% of national GDP</strong>
+                                </p>
+                            </div>
+                            <div class="outlook-goal-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                        </div>
+
+                        <div class="outlook-goal scroll-reveal-safe stagger-3" style="--goal-color: #f59e0b;">
+                            <div class="outlook-goal-number">03</div>
+                            <div class="outlook-goal-content">
+                                <h4 class="outlook-goal-title">Risk Reduction</h4>
+                                <p class="outlook-goal-text">
+                                    Lower the <strong>89% automation-exposure</strong> risk by reskilling vulnerable workers
+                                    <span class="outlook-goal-source">(ILO, 2025)</span>
+                                </p>
+                            </div>
+                            <div class="outlook-goal-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="outlook-goal scroll-reveal-safe stagger-4" style="--goal-color: #06b6d4;">
+                            <div class="outlook-goal-number">04</div>
+                            <div class="outlook-goal-content">
+                                <h4 class="outlook-goal-title">Skills Gap</h4>
+                                <p class="outlook-goal-text">
+                                    Close the gap in which <strong>only 10% of BPO applicants</strong> currently meet required skills
+                                    <span class="outlook-goal-source">(IBPAP)</span>
+                                </p>
+                            </div>
+                            <div class="outlook-goal-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-outlook-sidebar">
+                    <div class="outlook-metric-card scroll-reveal-safe stagger-5" style="--metric-color: #667eea;">
+                        <div class="outlook-metric-bg"></div>
+                        <div class="outlook-metric-content">
+                            <div class="outlook-metric-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="outlook-metric-value">2028</div>
+                            <div class="outlook-metric-label">Industry horizon</div>
+                            <div class="outlook-metric-source">IBPAP</div>
+                        </div>
+                    </div>
+
+                    <div class="outlook-metric-card scroll-reveal-safe stagger-6" style="--metric-color: #10b981;">
+                        <div class="outlook-metric-bg"></div>
+                        <div class="outlook-metric-content">
+                            <div class="outlook-metric-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="outlook-metric-value">800K</div>
+                            <div class="outlook-metric-label">Projected jobs at stake</div>
+                            <div class="outlook-metric-source">Opportunities</div>
+                        </div>
+                    </div>
+
+                    <div class="outlook-metric-card scroll-reveal-safe stagger-7" style="--metric-color: #f59e0b;">
+                        <div class="outlook-metric-bg"></div>
+                        <div class="outlook-metric-content">
+                            <div class="outlook-metric-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="outlook-metric-value">8.5%</div>
+                            <div class="outlook-metric-label">GDP share protected</div>
+                            <div class="outlook-metric-source">National economy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- CTA Section -->
+    <section id="enroll" class="cta-section mt-5 pt-5">
+        <div class="container-fluid px-0">
+            <div class="cta-card">
+                <span class="cta-orb cta-orb-1"></span>
+                <span class="cta-orb cta-orb-2"></span>
+                <span class="cta-orb cta-orb-3"></span>
+                <span class="cta-grid"></span>
+
+                <div class="cta-falling-shapes" aria-hidden="true">
+                    <div class="falling-shape shape-circle"></div>
+                    <div class="falling-shape shape-square"></div>
+                    <div class="falling-shape shape-triangle"></div>
+                    <div class="falling-shape shape-x"></div>
+                    <div class="falling-text">AI</div>
+                    <div class="falling-shape shape-circle"></div>
+                    <div class="falling-shape shape-square"></div>
+                    <div class="falling-shape shape-triangle"></div>
+                    <div class="falling-shape shape-x"></div>
+                    <div class="falling-text">AI</div>
+                    <div class="falling-shape shape-circle"></div>
+                    <div class="falling-shape shape-square"></div>
+                    <div class="falling-shape shape-triangle"></div>
+                    <div class="falling-shape shape-x"></div>
+                    <div class="falling-text">AI</div>
+                </div>
+
+                <div class="cta-content">
+                    <span class="cta-eyebrow scroll-reveal-safe stagger-1">
+                        <span class="cta-eyebrow-dot"></span>
+                        Join the Movement
+                    </span>
+                    <h2 class="cta-title scroll-reveal-safe stagger-2">Be Part of the Impact</h2>
+                    <p class="cta-subtitle scroll-reveal-safe stagger-3">
+                        Join the movement that's transforming careers and securing the Philippines' digital future
+                    </p>
+
+                    <div class="cta-buttons">
+                        <a href="#" class="cta-btn cta-btn-secondary scroll-reveal-safe stagger-4" onclick="showEnrollmentForm()">
+                            <i class="fas fa-plus"></i>
+                            <span>Start Your Journey</span>
+                        </a>
+                        <a href="team.html" class="cta-btn cta-btn-primary scroll-reveal-safe stagger-5">
+                            <i class="fas fa-users"></i>
+                            <span>Meet Our Team</span>
+                            <i class="fas fa-arrow-right cta-btn-arrow"></i>
+                        </a>
+                    </div>
+
+                    <div class="cta-trust">
+                        <div class="cta-trust-item scroll-reveal-safe stagger-1">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Transform Careers</span>
+                        </div>
+                        <div class="cta-trust-item scroll-reveal-safe stagger-2">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Secure Digital Future</span>
+                        </div>
+                        <div class="cta-trust-item scroll-reveal-safe stagger-3">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Join the Movement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4 site-footer-grid">
+                <div class="col-lg-5 col-md-12">
+                    <h5 class="site-footer-title">AI Upskilling Philippines</h5>
+                    <p class="site-footer-desc">
+                        Equipping Filipino BPO workers with industry-aligned AI, data, and digital skills — in partnership with IBPAP and leading enterprises.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div style="padding-left: 30px;">
+                        <h5 class="site-footer-title">Quick Links</h5>
+                        <ul class="site-footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="process.html">Process</a></li>
+                            <li><a href="benefits.html">Benefits</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="site-footer-title">Contact</h5>
+                    <ul class="site-footer-links site-footer-contact">
+                        <li><i class="fas fa-envelope"></i> info@aiupskilling.ph</li>
+                        <li><i class="fas fa-phone"></i> +63 2 1234 5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="site-footer-bottom">
+                <div class="site-footer-social" style="justify-content: center;">
+                    <a href="https://www.facebook.com/laxus.frfr" class="site-footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/laxus.frfr" class="site-footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@laxus.frfr" class="site-footer-social-link" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="mb-0">&copy; 2026 AI Upskilling Philippines. All rights reserved.</p>
+                <p class="mb-0 site-footer-credit">Powered by Windsurf & Framer | Developed by <span>Laxus</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cat Mascot -->
+    <div class="cat-mascot-wrapper">
+        <div class="cat-mascot" id="catMascot">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="AI Cat Mascot" class="cat-icon" id="catMascotIcon">
+            <div class="cat-speech-bubble" id="catSpeechBubble">
+                <button type="button" class="cat-bubble-close" id="catBubbleClose" aria-label="Close message">&times;</button>
+                <div class="cat-speech-bubble-content">
+                    <p class="cat-message">Discover the <strong>life-changing benefits</strong> of AI upskilling. Your future starts here!</p>
+                </div>
+                <div class="cat-speech-bubble-tail"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            const bubble = document.getElementById('catSpeechBubble');
+            const closeBtn = document.getElementById('catBubbleClose');
+            const catIcon = document.getElementById('catMascotIcon');
+            const mascot = document.getElementById('catMascot');
+            if (!bubble || !closeBtn || !catIcon || !mascot) return;
+            const hide = () => {
+                bubble.classList.add('is-hidden');
+                mascot.classList.add('bubble-hidden');
+            };
+            const show = () => {
+                bubble.classList.remove('is-hidden');
+                mascot.classList.remove('bubble-hidden');
+            };
+            closeBtn.addEventListener('click', (e) => { e.stopPropagation(); hide(); });
+            catIcon.addEventListener('click', () => {
+                if (bubble.classList.contains('is-hidden')) show();
+            });
+        })();
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script-benefits.js" defer></script>
+
+    <!-- Progress Bar Animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const metricBars = document.querySelectorAll('.metric-bar');
+            const expectedResultsSection = document.querySelector('.expected-results-section');
+            
+            const animateBar = (bar) => {
+                const duration = 3000;
+                const startTime = performance.now();
+                const startScale = 0;
+                const endScale = 1;
+                
+                const tick = (now) => {
+                    const elapsed = now - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easedProgress = 1 - Math.pow(1 - progress, 3);
+                    const currentScale = startScale + (endScale - startScale) * easedProgress;
+                    
+                    bar.style.transform = `scaleX(${currentScale})`;
+                    
+                    if (progress < 1) {
+                        requestAnimationFrame(tick);
+                    }
+                };
+                
+                requestAnimationFrame(tick);
+            };
+            
+            if (expectedResultsSection && metricBars.length > 0) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            metricBars.forEach(bar => {
+                                animateBar(bar);
+                            });
+                            observer.unobserve(expectedResultsSection);
+                        }
+                    });
+                }, { threshold: 0.3 });
+                
+                observer.observe(expectedResultsSection);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - AI Upskilling Philippines</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css?v=15" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+    
+    <!-- GSAP and Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="lenis.min.js"></script>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const catMascotWrapper = document.querySelector('.cat-mascot-wrapper');
+
+            // Show cat mascot after 3 seconds
+            setTimeout(() => {
+                if (catMascotWrapper) {
+                    catMascotWrapper.classList.add('visible');
+                }
+            }, 3000);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="AI Upskilling PH" style="width: 30px; height: 30px; margin-right: 8px;"> AI Upskilling PH
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><span class="nav-text">Home</span><span class="nav-bar"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="process.html"><span class="nav-text">Process</span><span class="nav-bar"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="benefits.html"><span class="nav-text">Benefits</span><span class="nav-bar"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html"><span class="nav-text">Our Team</span><span class="nav-bar"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-how-it-works hero-section--parallax">
+        <div class="hero-bg"></div>
+        <div class="hero-light-orb hero-light-orb-1"></div>
+        <div class="hero-light-orb hero-light-orb-2"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero-content text-center">
+                        <h1 class="display-4 fw-bold text-white mb-4 scroll-reveal-safe stagger-1">How Our Program Works</h1>
+                        <p class="lead text-white mb-4 scroll-reveal-safe stagger-2">
+                            A step-by-step journey from traditional BPO roles to AI-powered careers
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper with Fixed Background -->
+    <div class="how-it-works-main-content-wrapper">
+        <div class="grid-pattern-overlay"></div>
+
+        <!-- Project Objective -->
+    <section class="project-objective-section-how-it-works">
+        <div class="project-objective-bg-orb project-objective-bg-orb-1"></div>
+        <div class="project-objective-bg-orb project-objective-bg-orb-2"></div>
+        <div class="project-objective-grid"></div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="project-objective-visual">
+                        <div class="objective-icon-wrapper" id="objectiveIconWrapper">
+                            <div class="objective-icon-circle objective-icon-circle-1">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="objective-icon-circle objective-icon-circle-2">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="objective-icon-circle objective-icon-circle-3">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="objective-stat">
+                                <span class="objective-stat-number">89%</span>
+                                <span class="objective-stat-label">BPO Jobs at Risk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="project-objective-content">
+                        <span class="project-objective-eyebrow scroll-reveal-safe stagger-1">
+                            <span class="project-objective-eyebrow-dot"></span>
+                            Project Objective
+                        </span>
+                        <h2 class="project-objective-title scroll-reveal-safe stagger-2">Closing the AI Skills Gap, One Worker at a Time</h2>
+                        <p class="project-objective-subtitle scroll-reveal-safe stagger-3">
+                            This project's primary objective is to address the growing issue of <strong>job displacement and skills mismatch</strong> brought on by AI and automation in the Philippine BPO sector.
+                        </p>
+
+                        <div class="project-objective-points">
+                            <div class="objective-point scroll-reveal-safe stagger-1">
+                                <div class="objective-point-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="objective-point-text">
+                                    <h4>Accessible Pathways</h4>
+                                    <p>Provide BPO workers, students, and entry-level professionals with accessible <strong>upskilling and reskilling pathways</strong> centered on digital, technical, and human-centered skills.</p>
+                                </div>
+                            </div>
+                            <div class="objective-point scroll-reveal-safe stagger-2">
+                                <div class="objective-point-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="objective-point-text">
+                                    <h4>Adaptability & Resilience</h4>
+                                    <p>Promote <strong>workforce adaptability, sustainable economic growth, and resilience</strong> through structured training, career counseling, and partnerships.</p>
+                                </div>
+                            </div>
+                            <div class="objective-point">
+                                <div class="objective-point-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="objective-point-text">
+                                    <h4>Four Key Assumptions</h4>
+                                    <p>Rising demand for digitally-skilled workers, willingness to engage in retraining, collaboration across sectors, and access to technology.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Overview -->
+    <section class="solution-section-how-it-works">
+        <span class="solution-bg-orb-how-it-works solution-bg-orb-how-it-works-1"></span>
+        <span class="solution-bg-orb-how-it-works solution-bg-orb-how-it-works-2"></span>
+
+        <div class="container">
+            <div class="solution-header-how-it-works">
+                <span class="solution-eyebrow-how-it-works scroll-reveal-safe stagger-1">Your Journey</span>
+                <h2 class="solution-title-how-it-works scroll-reveal-safe stagger-2">Your Transformation Journey</h2>
+                <p class="solution-subtitle-how-it-works scroll-reveal-safe stagger-3">
+                    Four simple steps to future-proof your career
+                </p>
+            </div>
+
+            <div class="solution-steps-how-it-works">
+                <div class="solution-step-how-it-works scroll-reveal-safe stagger-1" style="--ss-a:#667eea;--ss-b:#764ba2;">
+                    <span class="solution-step-watermark-how-it-works">01</span>
+                    <div class="solution-step-icon-how-it-works">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <span class="solution-step-label-how-it-works">Step 01 · Assessment</span>
+                    <h4 class="solution-step-title-how-it-works">Assessment & Enrollment</h4>
+                    <p class="solution-step-desc-how-it-works">
+                        Take our skills assessment to identify your current strengths and areas for growth. Get personalized recommendations for your learning path.
+                    </p>
+                </div>
+
+                <div class="solution-step-how-it-works scroll-reveal-safe stagger-2" style="--ss-a:#764ba2;--ss-b:#8b5cf6;">
+                    <span class="solution-step-watermark-how-it-works">02</span>
+                    <div class="solution-step-icon-how-it-works">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span class="solution-step-label-how-it-works">Step 02 · Learning</span>
+                    <h4 class="solution-step-title-how-it-works">Blended Learning</h4>
+                    <p class="solution-step-desc-how-it-works">
+                        Engage in our comprehensive training program combining online modules, hands-on workshops, and real-world projects.
+                    </p>
+                </div>
+
+                <div class="solution-step-how-it-works scroll-reveal-safe stagger-3" style="--ss-a:#8b5cf6;--ss-b:#6366f1;">
+                    <span class="solution-step-watermark-how-it-works">03</span>
+                    <div class="solution-step-icon-how-it-works">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <span class="solution-step-label-how-it-works">Step 03 · Certify</span>
+                    <h4 class="solution-step-title-how-it-works">Certification & Assessment</h4>
+                    <p class="solution-step-desc-how-it-works">
+                        Demonstrate your new skills through competency assessments and earn industry-recognized micro-credentials.
+                    </p>
+                </div>
+
+                <div class="solution-step-how-it-works scroll-reveal-safe stagger-4" style="--ss-a:#6366f1;--ss-b:#4f46e5;">
+                    <span class="solution-step-watermark-how-it-works">04</span>
+                    <div class="solution-step-icon-how-it-works">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <span class="solution-step-label-how-it-works">Step 04 · Transition</span>
+                    <h4 class="solution-step-title-how-it-works">Career Transition</h4>
+                    <p class="solution-step-desc-how-it-works">
+                        Get matched with new opportunities through partner BPO firms and receive ongoing support for your career growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Methodology -->
+    <section class="learning-methodology-section-how-it-works">
+        <div class="learning-methodology-bg-orb learning-methodology-bg-orb-1"></div>
+        <div class="learning-methodology-bg-orb learning-methodology-bg-orb-2"></div>
+
+        <div class="container">
+            <div class="learning-methodology-header-how-it-works">
+                <span class="learning-methodology-eyebrow-how-it-works scroll-reveal-safe stagger-1">Methodology</span>
+                <h2 class="learning-methodology-title-how-it-works scroll-reveal-safe stagger-2">Our Learning Methodology</h2>
+                <p class="learning-methodology-subtitle-how-it-works scroll-reveal-safe stagger-3">Designed for working professionals</p>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="learning-methodology-content-how-it-works">
+                        <h3 class="learning-methodology-section-title-how-it-works scroll-reveal-safe stagger-1">Blended Learning Approach</h3>
+                        <p class="learning-methodology-intro-how-it-works scroll-reveal-safe stagger-2">
+                            Our program combines the flexibility of online learning with the effectiveness 
+                            of in-person instruction to ensure optimal skill development.
+                        </p>
+                        
+                        <div class="learning-methodology-items-how-it-works learning-methodology-items-timeline" id="blendedLearningTimeline">
+                            <div class="learning-methodology-item-how-it-works scroll-reveal-safe stagger-1">
+                                <div class="learning-methodology-item-icon-how-it-works">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="learning-methodology-item-content-how-it-works">
+                                    <h4>Online Self-Paced Modules</h4>
+                                    <p>Learn at your own schedule with 24/7 access to video lectures, interactive exercises, and digital resources.</p>
+                                </div>
+                            </div>
+
+                            <div class="learning-methodology-item-how-it-works scroll-reveal-safe stagger-2">
+                                <div class="learning-methodology-item-icon-how-it-works">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <div class="learning-methodology-item-content-how-it-works">
+                                    <h4>Hands-On Practice</h4>
+                                    <p>Apply skills to real workplace scenarios — the paper specifies hands-on practice as a core element of the blended approach.</p>
+                                </div>
+                            </div>
+
+                            <div class="learning-methodology-item-how-it-works scroll-reveal-safe stagger-3">
+                                <div class="learning-methodology-item-icon-how-it-works">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="learning-methodology-item-content-how-it-works">
+                                    <h4>Employer-Led On-the-Job Training</h4>
+                                    <p>Partner BPO firms host trainees so new skills are applied directly in workplace processes, with mentor guidance.</p>
+                                </div>
+                            </div>
+
+                            <div class="learning-methodology-item-how-it-works scroll-reveal-safe stagger-4">
+                                <div class="learning-methodology-item-icon-how-it-works">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="learning-methodology-item-content-how-it-works">
+                                    <h4>Recognized Micro-Credentials</h4>
+                                    <p>Earn industry-recognized certificates and digital badges issued through partnerships with credentialing bodies such as TESDA.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="learning-schedule-how-it-works scroll-reveal-safe stagger-3">
+                        <div class="learning-schedule-header-how-it-works">
+                            <h4>Illustrative Weekly Schedule</h4>
+                            <p>An example of how a participant might pace the blended-learning workload — actual schedule will be finalized at implementation.</p>
+                        </div>
+                        <div class="learning-schedule-items-how-it-works">
+                            <div class="learning-schedule-item-how-it-works">
+                                <div class="learning-schedule-day-how-it-works">
+                                    <span class="learning-schedule-day-name-how-it-works">Monday</span>
+                                    <span class="learning-schedule-day-desc-how-it-works">Online Module: AI Fundamentals</span>
+                                </div>
+                                <span class="learning-schedule-badge-how-it-works learning-schedule-badge-primary-how-it-works">2 hours</span>
+                            </div>
+                            <div class="learning-schedule-item-how-it-works">
+                                <div class="learning-schedule-day-how-it-works">
+                                    <span class="learning-schedule-day-name-how-it-works">Wednesday</span>
+                                    <span class="learning-schedule-day-desc-how-it-works">Live Session: Data Analytics</span>
+                                </div>
+                                <span class="learning-schedule-badge-how-it-works learning-schedule-badge-success-how-it-works">1.5 hours</span>
+                            </div>
+                            <div class="learning-schedule-item-how-it-works">
+                                <div class="learning-schedule-day-how-it-works">
+                                    <span class="learning-schedule-day-name-how-it-works">Friday</span>
+                                    <span class="learning-schedule-day-desc-how-it-works">Project Work: RPA Implementation</span>
+                                </div>
+                                <span class="learning-schedule-badge-how-it-works learning-schedule-badge-warning-how-it-works">3 hours</span>
+                            </div>
+                            <div class="learning-schedule-item-how-it-works">
+                                <div class="learning-schedule-day-how-it-works">
+                                    <span class="learning-schedule-day-name-how-it-works">Weekend</span>
+                                    <span class="learning-schedule-day-desc-how-it-works">Flexible: Review & Practice</span>
+                                </div>
+                                <span class="learning-schedule-badge-how-it-works learning-schedule-badge-info-how-it-works">Self-paced</span>
+                            </div>
+                        </div>
+                        <div class="learning-schedule-note-how-it-works">
+                            <i class="fas fa-info-circle"></i>
+                            <strong>Flexible Timing:</strong> Adjust your schedule based on your work commitments and learning pace.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Critical Skill Areas (from paper Section I.B) -->
+    <section class="skill-areas-section-how-it-works">
+        <div class="skill-areas-bg-pattern"></div>
+        <div class="skill-areas-bg-orb skill-areas-bg-orb-1"></div>
+        <div class="skill-areas-bg-orb skill-areas-bg-orb-2"></div>
+
+        <div class="container">
+            <div class="skill-areas-header-how-it-works">
+                <span class="skill-areas-eyebrow-how-it-works scroll-reveal-safe stagger-1">
+                    <span class="skill-areas-eyebrow-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </span>
+                    Curriculum
+                </span>
+                <h2 class="skill-areas-title-how-it-works scroll-reveal-safe stagger-2">Critical Skill Areas Covered</h2>
+                <p class="skill-areas-subtitle-how-it-works scroll-reveal-safe stagger-3">
+                    The five skill categories identified in the proposal as the gap between current BPO workers and AI-era industry demand.
+                </p>
+            </div>
+
+            <div class="skill-areas-grid-how-it-works">
+                <div class="skill-card-how-it-works skill-card-large-how-it-works scroll-reveal-safe stagger-1" style="--sk-a:#10b981;--sk-b:#059669;">
+                    <div class="skill-card-number-how-it-works">01</div>
+                    <div class="skill-card-icon-how-it-works">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="skill-card-content-how-it-works">
+                        <h4>Advanced Data Analytics &amp; Business Intelligence</h4>
+                        <p>Turning operational data into business insights — a frontline replacement for routine reporting roles being automated away.</p>
+                    </div>
+                    <div class="skill-card-decoration-how-it-works"></div>
+                </div>
+
+                <div class="skill-card-how-it-works skill-card-medium-how-it-works scroll-reveal-safe stagger-2" style="--sk-a:#667eea;--sk-b:#764ba2;">
+                    <div class="skill-card-number-how-it-works">02</div>
+                    <div class="skill-card-icon-how-it-works">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="skill-card-content-how-it-works">
+                        <h4>Artificial Intelligence &amp; Machine Learning</h4>
+                        <p>Includes <strong>prompt engineering</strong> and <strong>AI governance</strong> — using AI tools responsibly and effectively at work.</p>
+                    </div>
+                    <div class="skill-card-decoration-how-it-works"></div>
+                </div>
+
+                <div class="skill-card-how-it-works skill-card-medium-how-it-works scroll-reveal-safe stagger-3" style="--sk-a:#6b7280;--sk-b:#4b5563;">
+                    <div class="skill-card-number-how-it-works">03</div>
+                    <div class="skill-card-icon-how-it-works">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="skill-card-content-how-it-works">
+                        <h4>Cybersecurity &amp; Cloud Computing Basics</h4>
+                        <p>Foundational knowledge needed to operate confidently in cloud-hosted, security-sensitive BPO workflows.</p>
+                    </div>
+                    <div class="skill-card-decoration-how-it-works"></div>
+                </div>
+
+                <div class="skill-card-how-it-works skill-card-wide-how-it-works scroll-reveal-safe stagger-4" style="--sk-a:#f59e0b;--sk-b:#d97706;">
+                    <div class="skill-card-number-how-it-works">04</div>
+                    <div class="skill-card-icon-how-it-works">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="skill-card-content-how-it-works">
+                        <h4>Complex Problem Solving &amp; Critical Thinking</h4>
+                        <p>The "human advantage" skills AI cannot easily replicate — judgment, reasoning, and decision-making under ambiguity.</p>
+                    </div>
+                    <div class="skill-card-decoration-how-it-works"></div>
+                </div>
+
+                <div class="skill-card-how-it-works skill-card-wide-how-it-works scroll-reveal-safe stagger-5" style="--sk-a:#06b6d4;--sk-b:#0891b2;">
+                    <div class="skill-card-number-how-it-works">05</div>
+                    <div class="skill-card-icon-how-it-works">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="skill-card-content-how-it-works">
+                        <h4>Process Design &amp; Robotic Process Automation</h4>
+                        <p>Designing automations and improving processes — moving from a worker being automated to a worker who builds automations.</p>
+                    </div>
+                    <div class="skill-card-decoration-how-it-works"></div>
+                </div>
+            </div>
+
+            <div class="skill-areas-footer-how-it-works">
+                <em>Source: Critical skill areas identified in <strong>IBPAP Survey</strong> data and the project's problem statement (Section I.B).</em>
+            </div>
+        </div>
+    </section>
+
+    <!-- Participant Support -->
+    <section class="participant-support-section-how-it-works">
+        <div class="participant-support-bg-dots"></div>
+        <div class="participant-support-bg-orb participant-support-bg-orb-1"></div>
+        <div class="participant-support-bg-orb participant-support-bg-orb-2"></div>
+
+        <div class="container">
+            <div class="participant-support-header-how-it-works">
+                <span class="participant-support-eyebrow-how-it-works scroll-reveal-safe stagger-1">
+                    <span class="participant-support-eyebrow-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </span>
+                    Support
+                </span>
+                <h2 class="participant-support-title-how-it-works scroll-reveal-safe stagger-2">Participant Support</h2>
+                <p class="participant-support-subtitle-how-it-works scroll-reveal-safe stagger-3">
+                    Three forms of support drawn directly from the proposal's project activities
+                </p>
+            </div>
+
+            <div class="participant-support-timeline-how-it-works">
+                <div class="participant-support-line-how-it-works"></div>
+
+                <div class="participant-support-item-how-it-works scroll-reveal-safe stagger-1" style="--ps-a:#667eea;--ps-b:#764ba2;">
+                    <div class="participant-support-step-how-it-works">
+                        <span class="participant-support-step-number-how-it-works">01</span>
+                        <div class="participant-support-step-icon-how-it-works">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="participant-support-content-how-it-works">
+                        <h4>Six-Month Post-Training Mentorship</h4>
+                        <p>Each program graduate is paired with a senior BPO leader for six months of career coaching to support retention and upward mobility.</p>
+                        <span class="participant-support-reference-how-it-works"><em>Paper Section IV, Result 4</em></span>
+                    </div>
+                </div>
+
+                <div class="participant-support-item-how-it-works scroll-reveal-safe stagger-2" style="--ps-a:#10b981;--ps-b:#059669;">
+                    <div class="participant-support-step-how-it-works">
+                        <span class="participant-support-step-number-how-it-works">02</span>
+                        <div class="participant-support-step-icon-how-it-works">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                    </div>
+                    <div class="participant-support-content-how-it-works">
+                        <h4>Career Counseling</h4>
+                        <p>Personalized career counseling helps each worker, student, or professional choose the right reskilling pathway for their current role and goals.</p>
+                        <span class="participant-support-reference-how-it-works"><em>Paper Section II</em></span>
+                    </div>
+                </div>
+
+                <div class="participant-support-item-how-it-works scroll-reveal-safe stagger-3" style="--ps-a:#f59e0b;--ps-b:#d97706;">
+                    <div class="participant-support-step-how-it-works">
+                        <span class="participant-support-step-number-how-it-works">03</span>
+                        <div class="participant-support-step-icon-how-it-works">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="participant-support-content-how-it-works">
+                        <h4>Soft Skills Integration Workshops</h4>
+                        <p>"The Human Advantage" workshops cover critical thinking, emotional intelligence, and complex problem solving — the skills AI cannot easily replicate.</p>
+                        <span class="participant-support-reference-how-it-works"><em>Paper Section IV, Result 4</em></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Activities -->
+    <section class="implementation-activities-section-how-it-works">
+        <div class="implementation-activities-bg-gradient"></div>
+        <div class="implementation-activities-grid-pattern"></div>
+
+        <div class="container">
+            <div class="implementation-activities-header-how-it-works">
+                <span class="implementation-activities-eyebrow-how-it-works scroll-reveal-safe stagger-1">
+                    <span class="implementation-activities-eyebrow-icon">
+                        <i class="fas fa-tasks"></i>
+                    </span>
+                    Project Activities
+                </span>
+                <h2 class="implementation-activities-title-how-it-works scroll-reveal-safe stagger-2">Implementation Activities</h2>
+                <p class="implementation-activities-subtitle-how-it-works scroll-reveal-safe stagger-3">
+                    Four work-streams operationalize the project — each one aligned with a target Result and its KPIs.
+                </p>
+            </div>
+
+            <div class="implementation-activities-masonry-how-it-works">
+                <div class="implementation-card-how-it-works implementation-card-tall-how-it-works scroll-reveal-safe stagger-1" style="--ia-color:#667eea;">
+                    <div class="implementation-card-header-how-it-works">
+                        <div class="implementation-card-number-how-it-works">01</div>
+                        <h4>Technical Skill Acquisition</h4>
+                    </div>
+                    <div class="implementation-card-alignment-how-it-works">
+                        <i class="fas fa-link"></i>
+                        <span>Aligned with Result 1 — AI &amp; Digital Literacy</span>
+                    </div>
+                    <ul class="implementation-card-list-how-it-works">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Curriculum Development.</strong> Collaborate with IT professionals and AI educators on modules in Prompt Engineering, RPA software, and AI-enhanced customer service.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Digital Learning Hubs.</strong> Stand up online Learning Management Systems plus physical "upskilling kiosks" inside BPO hubs for use during downtime.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Assessment &amp; Certification.</strong> Run pre-training diagnostics and post-training competency tests to validate the 80% pass-rate target.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="implementation-card-how-it-works implementation-card-wide-how-it-works scroll-reveal-safe stagger-2" style="--ia-color:#10b981;">
+                    <div class="implementation-card-header-how-it-works">
+                        <div class="implementation-card-number-how-it-works">02</div>
+                        <h4>Industry Alignment &amp; Partnerships</h4>
+                    </div>
+                    <div class="implementation-card-alignment-how-it-works">
+                        <i class="fas fa-link"></i>
+                        <span>Aligned with Result 2 — Bridging the Skills Gap</span>
+                    </div>
+                    <ul class="implementation-card-list-how-it-works">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Stakeholder Consultative Summits.</strong> Quarterly meetings with IBPAP leaders, BPO executives, and TESDA representatives so curriculum matches live vacancy requirements.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Partnership Formalization (MOA Signing).</strong> Draft and sign Memorandums of Agreement with at least 10 BPO firms guaranteeing internships or fast-track interview status for graduates.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Real-time Skills Mapping.</strong> Monthly surveys of BPO HR teams to update the curriculum dynamically based on shifting demand in AI governance and data analytics.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="implementation-card-how-it-works implementation-card-medium-how-it-works scroll-reveal-safe stagger-3" style="--ia-color:#f59e0b;">
+                    <div class="implementation-card-header-how-it-works">
+                        <div class="implementation-card-number-how-it-works">03</div>
+                        <h4>Awareness &amp; Advocacy Campaigns</h4>
+                    </div>
+                    <div class="implementation-card-alignment-how-it-works">
+                        <i class="fas fa-link"></i>
+                        <span>Aligned with Result 3 — Public Awareness</span>
+                    </div>
+                    <ul class="implementation-card-list-how-it-works">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>"Future-Proof Your Career" Seminar Series.</strong> A roadshow across major BPO hubs — Makati, Ortigas, and Cebu — educating workers on AI–human collaboration.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Digital Outreach Campaign.</strong> Social media activations on LinkedIn, Facebook, and TikTok featuring testimonials from successfully reskilled BPO workers to hit the 2,000-person reach target.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Digital Badge Incentive Program.</strong> Shareable badges on social profiles to gamify the learning experience and lift participation rates.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="implementation-card-how-it-works implementation-card-medium-how-it-works scroll-reveal-safe stagger-4" style="--ia-color:#06b6d4;">
+                    <div class="implementation-card-header-how-it-works">
+                        <div class="implementation-card-number-how-it-works">04</div>
+                        <h4>Workforce Flexibility &amp; Career Support</h4>
+                    </div>
+                    <div class="implementation-card-alignment-how-it-works">
+                        <i class="fas fa-link"></i>
+                        <span>Aligned with Result 4 — Long-Term Resilience</span>
+                    </div>
+                    <ul class="implementation-card-list-how-it-works">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Soft Skills Integration Workshops.</strong> "The Human Advantage" sessions on critical thinking, emotional intelligence, and complex problem-solving — the skills AI cannot easily replicate.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Post-Training Mentorship.</strong> Six-month coaching pairings between program graduates and senior BPO leaders to support retention and upward mobility.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Employment Tracking &amp; Longitudinal Study.</strong> A database that monitors participant employment status every six months so the project can adjust based on real career progression data.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- End Main Content Wrapper -->
+
+    <!-- CTA Section -->
+    <section id="enroll" class="cta-section">
+        <div class="container-fluid px-0">
+            <div class="cta-card">
+                <span class="cta-orb cta-orb-1"></span>
+                <span class="cta-orb cta-orb-2"></span>
+                <span class="cta-orb cta-orb-3"></span>
+                <span class="cta-grid"></span>
+
+                <div class="cta-falling-shapes" aria-hidden="true">
+                    <div class="falling-shape shape-circle"></div>
+                    <div class="falling-shape shape-square"></div>
+                    <div class="falling-shape shape-triangle"></div>
+                    <div class="falling-shape shape-x"></div>
+                    <div class="falling-text">AI</div>
+                    <div class="falling-shape shape-circle"></div>
+                    <div class="falling-shape shape-square"></div>
+                    <div class="falling-shape shape-triangle"></div>
+                    <div class="falling-shape shape-x"></div>
+                    <div class="falling-text">AI</div>
+                    <div class="falling-shape shape-circle"></div>
+                    <div class="falling-shape shape-square"></div>
+                    <div class="falling-shape shape-triangle"></div>
+                    <div class="falling-shape shape-x"></div>
+                    <div class="falling-text">AI</div>
+                </div>
+
+                <div class="cta-content">
+                    <span class="cta-eyebrow scroll-reveal-safe stagger-1">
+                        <span class="cta-eyebrow-dot"></span>
+                        Start Your Journey
+                    </span>
+                    <h2 class="cta-title scroll-reveal-safe stagger-2">Ready to Start Your Journey?</h2>
+                    <p class="cta-subtitle scroll-reveal-safe stagger-3">
+                        Take the first step towards an AI-powered career in just 5 minutes
+                    </p>
+
+                    <div class="cta-buttons">
+                        <a href="#" class="cta-btn cta-btn-secondary scroll-reveal-safe stagger-4" onclick="showAssessmentForm()">
+                            <i class="fas fa-clipboard-check"></i>
+                            <span>Take Free Assessment</span>
+                        </a>
+                        <a href="benefits.html" class="cta-btn cta-btn-primary scroll-reveal-safe stagger-5">
+                            <i class="fas fa-chart-line"></i>
+                            <span>View Benefits</span>
+                            <i class="fas fa-arrow-right cta-btn-arrow"></i>
+                        </a>
+                    </div>
+
+                    <div class="cta-trust">
+                        <div class="cta-trust-item scroll-reveal-safe stagger-1">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free Assessment</span>
+                        </div>
+                        <div class="cta-trust-item scroll-reveal-safe stagger-2">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No Commitment Required</span>
+                        </div>
+                        <div class="cta-trust-item scroll-reveal-safe stagger-3">
+                            <i class="fas fa-check-circle"></i>
+                            <span>AI-Powered Career Path</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4 site-footer-grid">
+                <div class="col-lg-5 col-md-12">
+                    <h5 class="site-footer-title">AI Upskilling Philippines</h5>
+                    <p class="site-footer-desc">
+                        Equipping Filipino BPO workers with industry-aligned AI, data, and digital skills — in partnership with IBPAP and leading enterprises.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div style="padding-left: 30px;">
+                        <h5 class="site-footer-title">Quick Links</h5>
+                        <ul class="site-footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="process.html">Process</a></li>
+                            <li><a href="benefits.html">Benefits</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="site-footer-title">Contact</h5>
+                    <ul class="site-footer-links site-footer-contact">
+                        <li><i class="fas fa-envelope"></i> info@aiupskilling.ph</li>
+                        <li><i class="fas fa-phone"></i> +63 2 1234 5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="site-footer-bottom">
+                <div class="site-footer-social" style="justify-content: center;">
+                    <a href="https://www.facebook.com/laxus.frfr" class="site-footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/laxus.frfr" class="site-footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@laxus.frfr" class="site-footer-social-link" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="mb-0">&copy; 2026 AI Upskilling Philippines. All rights reserved.</p>
+                <p class="mb-0 site-footer-credit">Powered by Windsurf & Framer | Developed by <span>Laxus</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const timeline = document.getElementById('blendedLearningTimeline');
+            if (!timeline) return;
+            const items = Array.from(timeline.querySelectorAll('.learning-methodology-item-how-it-works'));
+            let ticking = false;
+
+            const RAMP = 90; // pixels over which the glow ramps from 0 to 1
+
+            const update = () => {
+                ticking = false;
+                const rect = timeline.getBoundingClientRect();
+                const vh = window.innerHeight || document.documentElement.clientHeight;
+                const start = vh * 0.75;
+                const end = vh * 0.25;
+                const span = rect.height + (start - end);
+                const traveled = start - rect.top;
+                let progress = traveled / span;
+                progress = Math.max(0, Math.min(1, progress));
+                timeline.style.setProperty('--timeline-progress', progress.toFixed(4));
+
+                const top = rect.top + 32;
+                const bottom = rect.bottom - 32;
+                const fillBottom = top + (bottom - top) * progress;
+                items.forEach((item) => {
+                    const icon = item.querySelector('.learning-methodology-item-icon-how-it-works');
+                    if (!icon) return;
+                    const iconRect = icon.getBoundingClientRect();
+                    const iconCenter = iconRect.top + iconRect.height / 2;
+                    // Continuous 0..1: starts ramping RAMP px before the bar reaches the icon,
+                    // hits 1 when the bar passes the icon center.
+                    const dist = fillBottom - iconCenter;
+                    let glow = (dist + RAMP) / RAMP;
+                    glow = Math.max(0, Math.min(1, glow));
+                    // Ease for nicer feel
+                    glow = glow * glow * (3 - 2 * glow);
+                    item.style.setProperty('--iglow', glow.toFixed(4));
+                });
+            };
+
+            const onScroll = () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(update);
+                    ticking = true;
+                }
+            };
+
+            // Use Lenis scroll event if available for smoother interpolation
+            if (typeof bineLenis !== 'undefined' && bineLenis) {
+                bineLenis.on('scroll', update);
+            } else {
+                window.addEventListener('scroll', onScroll, { passive: true });
+            }
+            window.addEventListener('resize', onScroll);
+            update();
+        })();
+
+        (function () {
+            const wrapper = document.getElementById('objectiveIconWrapper');
+            if (!wrapper) return;
+            const SPREAD_THRESHOLD = 0.45;
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.intersectionRatio >= SPREAD_THRESHOLD) {
+                        wrapper.classList.add('is-spread');
+                    } else if (entry.boundingClientRect.top > window.innerHeight * 0.6) {
+                        // Reset only once the section is well below the viewport again
+                        wrapper.classList.remove('is-spread');
+                    }
+                });
+            }, { threshold: [0, 0.15, 0.3, 0.45, 0.6, 0.8, 1] });
+            io.observe(wrapper);
+        })();
+    </script>
+
+    <!-- Cat Mascot -->
+    <div class="cat-mascot-wrapper">
+        <div class="cat-mascot" id="catMascot">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="AI Cat Mascot" class="cat-icon" id="catMascotIcon">
+            <div class="cat-speech-bubble" id="catSpeechBubble">
+                <button type="button" class="cat-bubble-close" id="catBubbleClose" aria-label="Close message">&times;</button>
+                <div class="cat-speech-bubble-content">
+                    <p class="cat-message">Your journey to <strong>AI mastery</strong> starts here. Let's make it happen!</p>
+                </div>
+                <div class="cat-speech-bubble-tail"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            const bubble = document.getElementById('catSpeechBubble');
+            const closeBtn = document.getElementById('catBubbleClose');
+            const catIcon = document.getElementById('catMascotIcon');
+            const mascot = document.getElementById('catMascot');
+            if (!bubble || !closeBtn || !catIcon || !mascot) return;
+            const hide = () => {
+                bubble.classList.add('is-hidden');
+                mascot.classList.add('bubble-hidden');
+            };
+            const show = () => {
+                bubble.classList.remove('is-hidden');
+                mascot.classList.remove('bubble-hidden');
+            };
+            closeBtn.addEventListener('click', (e) => { e.stopPropagation(); hide(); });
+            catIcon.addEventListener('click', () => {
+                if (bubble.classList.contains('is-hidden')) show();
+            });
+        })();
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js?v=3" defer></script>
+</body>
+</html>
