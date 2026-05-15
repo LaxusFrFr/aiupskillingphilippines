@@ -146,6 +146,13 @@
                     setTimeout(() => {
                         if (catMascotWrapper) {
                             catMascotWrapper.classList.add('visible');
+                            // Show bubble after 1 second delay
+                            setTimeout(() => {
+                                const bubble = document.getElementById('catSpeechBubble');
+                                if (bubble) {
+                                    bubble.classList.remove('is-hidden');
+                                }
+                            }, 1000);
                         }
                     }, 7000);
                 }
@@ -666,7 +673,7 @@
 
     <!-- Cat Mascot -->
     <div class="cat-mascot-wrapper">
-        <div class="cat-mascot bubble-hidden" id="catMascot">
+        <div class="cat-mascot" id="catMascot">
             <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="AI Cat Mascot" class="cat-icon" id="catMascotIcon">
             <div class="cat-speech-bubble is-hidden" id="catSpeechBubble">
                 <div class="cat-speech-bubble-content">
