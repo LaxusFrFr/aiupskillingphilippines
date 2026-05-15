@@ -739,8 +739,11 @@ function initSafeScrollReveal() {
 document.addEventListener('DOMContentLoaded', function() {
     initFallbacks();
     initNavbarScroll();
-    // Don't call initSafeScrollReveal here - let it be called after loading screen finishes
-    // initSafeScrollReveal();
+    // Only call initSafeScrollReveal if there's no loading screen (pages without loading screen need it)
+    const loadingScreen = document.getElementById('loadingScreen');
+    if (!loadingScreen) {
+        initSafeScrollReveal();
+    }
     initNavbarBrandHandler();
     initCtaFallingShapes();
     initCtaFallingShapesHowItWorks();
