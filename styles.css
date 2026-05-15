@@ -14,6 +14,16 @@
     --header-height: 80px;
 }
 
+/* Hide scrollbar across all pages */
+html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
 /* Safe Scroll Reveal Animations - Laxus approach */
 .scroll-reveal-safe {
     opacity: 0;
@@ -636,6 +646,10 @@ body {
     color: white;
     padding: 120px 0 80px 0;
     position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
     overflow: hidden;
 }
 

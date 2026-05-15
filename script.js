@@ -298,7 +298,7 @@ function initHeroParallax() {
     // Subtle background animation using GSAP
     // Slowly pan the background position for a smooth, breathing effect
     gsap.to(bg, {
-        backgroundPosition: "110% center",
+        backgroundPosition: "100.5% center",
         duration: 20,
         repeat: -1,
         yoyo: true,
