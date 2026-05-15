@@ -192,13 +192,8 @@ function initMobileMenu() {
 
 // Handle navbar-brand (logo) click - show loading screen
 function initNavbarBrandHandler() {
-    const navbarBrand = document.querySelector('.navbar-brand');
-    if (navbarBrand && navbarBrand.getAttribute('href') === 'index.html') {
-        navbarBrand.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.location.href = 'index.html';
-        });
-    }
+    // Let the logo behave as a normal link to show loading screen
+    // No special handling needed
 }
 
 // Performance optimizations
@@ -744,7 +739,8 @@ function initSafeScrollReveal() {
 document.addEventListener('DOMContentLoaded', function() {
     initFallbacks();
     initNavbarScroll();
-    initSafeScrollReveal();
+    // Don't call initSafeScrollReveal here - let it be called after loading screen finishes
+    // initSafeScrollReveal();
     initNavbarBrandHandler();
     initCtaFallingShapes();
     initCtaFallingShapesHowItWorks();

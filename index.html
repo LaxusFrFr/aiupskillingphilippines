@@ -48,7 +48,7 @@
             </div>
             <div class="tip-message">
                 <div class="tip-title">Pro Tip</div>
-                <div class="tip-text">For the best visual experience, ensure your device animations are enabled. This website is optimized for all devices.</div>
+                <div class="tip-text">Enable Windows animation effects in Settings. This ensures the best visual experience.</div>
                 <div class="tip-attribution">System Notification</div>
             </div>
             <button class="tip-close" id="tipClose">
@@ -115,13 +115,17 @@
                     // Hide loading screen after a brief delay
                     setTimeout(() => {
                         loadingScreen.classList.add('hide');
+                        document.body.style.overflow = '';
                         if (typeof bineLenis !== 'undefined') bineLenis.start();
+
+                        // Reset scroll position to top
+                        window.scrollTo(0, 0);
 
                         // Initialize scroll reveal animations after loading screen starts hiding
                         if (typeof initSafeScrollReveal === 'function') {
                             setTimeout(() => initSafeScrollReveal(), 100);
                         }
-                        
+
                         // Remove from DOM after animation completes
                         setTimeout(() => {
                             loadingScreen.style.display = 'none';

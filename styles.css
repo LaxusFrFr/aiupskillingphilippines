@@ -596,6 +596,12 @@ body {
     transform: scaleX(0);
     transform-origin: center;
     opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-link:hover .nav-bar {
+    transform: scaleX(1);
+    opacity: 1;
 }
 
 .nav-link.active {
@@ -5643,6 +5649,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .skill-card-how-it-works {
@@ -5699,6 +5706,14 @@ footer a:hover {
     grid-row: span 1;
 }
 
+.skill-card-wide-how-it-works:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 600px;
+}
+
+
+
 /* Card number */
 .skill-card-number-how-it-works {
     position: absolute;
@@ -5750,6 +5765,7 @@ footer a:hover {
 .skill-card-content-how-it-works {
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 .skill-card-content-how-it-works h4 {
